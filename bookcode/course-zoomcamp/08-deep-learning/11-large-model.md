@@ -1,0 +1,1 @@
+[Moved to new location](https://github.com/DataTalksClub/machine-learning-zoomcamp/blob/master/08-deep-learning/11-large-model.md)

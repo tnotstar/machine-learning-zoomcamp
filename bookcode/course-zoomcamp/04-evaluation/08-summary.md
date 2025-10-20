@@ -1,0 +1,1 @@
+[Moved to new location](https://github.com/DataTalksClub/machine-learning-zoomcamp/blob/master/04-evaluation/08-summary.md)
