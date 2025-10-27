@@ -30,7 +30,7 @@ def predict_single(customer):
 
 
 @app.post("/predict")
-def predict(customer) -> PredictResponse:
+def predict(customer: Customer) -> PredictResponse:
     pp.pprint(customer)
     c = customer.model_dump()
     pp.pprint(c)
