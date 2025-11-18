@@ -39,9 +39,9 @@
 * [Module materials](../../06-trees)
 * [Homework](06-trees/homework.md)
 
-[**Midterm Project**](projects.md#midterm-project)
+[**Midterm Project**](projects/projects.md#midterm-project)
 
-* More information: [projects.md](projects.md#midterm-project)
+* More information: [projects/projects.md](projects.md#midterm-project)
 
 
 [**8. Neural Networks and Deep Learning**](08-deep-learning/)
@@ -62,14 +62,14 @@
 * [Homework](10-kubernetes/homework.md)
 
 
-[**Capstone Project**](projects.md#capstone-1)
+[**Capstone Project**](projects/projects.md#capstone-1)
 
-* More information: [projects.md](projects.md#capstone-1)
+* More information: [projects/projects.md](projects.md#capstone-1)
 
 
 [**Capstone Project 2**](projects.md#capstone-2)
 
-* More information: [projects.md](projects.md#capstone-2)
+* More information: [projects/projects.md](projects.md#capstone-2)
 
 
 **[Article](article.md) (Optional)**
