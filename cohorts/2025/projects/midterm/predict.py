@@ -3,6 +3,7 @@ import pprint as pp
 
 import uvicorn
 from fastapi import FastAPI
+from fastapi.responses import RedirectResponse
 from pydantic import BaseModel
 
 
@@ -28,8 +29,13 @@ def predict_single(transaction) -> float:
     return float(result)
 
 
+@app.get("/")
+async def docs_redirect():
+    return RedirectResponse(url="/docs")
+
+
 @app.post("/predict")
-def predict(transaction: TransactionRequest) -> PredictionResponse:
+async def predict(transaction: TransactionRequest) -> PredictionResponse:
     pp.pprint(transaction)
     tx = transaction.model_dump()
     pp.pprint(tx)
