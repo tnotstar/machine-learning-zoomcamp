@@ -21,11 +21,12 @@ class PredictionResponse(BaseModel):
 app = FastAPI(title="Fraud Detection Prediction Service")
 
 with open("pipeline_v1.bin", "rb") as f_in:
-    pipeline = pickle.load(f_in)
+    dv, model = pickle.load(f_in)
 
 
 def predict_single(transaction) -> float:
-    result = pipeline.predict_proba(transaction)[0, 1]
+    X = dv.transform([transaction])
+    result = model.predict_proba(X)[0, 1]
     return float(result)
 
 
@@ -44,4 +45,4 @@ async def predict(transaction: TransactionRequest) -> PredictionResponse:
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=9696)
+    uvicorn.run(app, host="0.0.0.0", port=8080)
