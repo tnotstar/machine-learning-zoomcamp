@@ -85,4 +85,4 @@ res.raise_for_status()
 print(res.json())
 ```
 
-More information about deployment can be found at [submission.ipynb](submission.ipynb).
+More information about deployment can be found at [submission.ipynb](https://colab.research.google.com/github/tnotstar/machine-learning-zoomcamp/blob/master/cohorts/2025/projects/midterm/submission.ipynb).
