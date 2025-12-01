@@ -19,6 +19,7 @@ You can download the target dataset for this homework from
 wget https://github.com/SVizor42/ML_Zoomcamp/releases/download/straight-curly-data/data.zip
 unzip data.zip
 ```
+The dataset is split into train and test dataset. Use train dataset to train the model and test dataset for validation. 
 
 In the lectures we saw how to use a pre-trained neural network. In the homework, we'll train a much smaller model from scratch. 
 
@@ -65,7 +66,7 @@ You need to develop the model with following structure:
 * The shape for input should be `(3, 200, 200)` (channels first format in PyTorch)
 * Next, create a convolutional layer (`nn.Conv2d`):
     * Use 32 filters (output channels)
-    * Kernel size should be `(3, 3)` (that's the size of the filter)
+    * Kernel size should be `(3, 3)` (that's the size of the filter), padding = 0, stride = 1
     * Use `'relu'` as activation 
 * Reduce the size of the feature map with max pooling (`nn.MaxPool2d`)
     * Set the pooling size to `(2, 2)`
