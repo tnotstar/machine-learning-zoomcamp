@@ -1,4 +1,4 @@
-# Homework 10: Kubernetes & TensorFlow Serving
+# Homework 10: Kubernetes & ONNX Model Serving
 
 This folder contains the solution for Homework 10 of the [Machine Learning Zoomcamp](https://github.com/DataTalksClub/machine-learning-zoomcamp) (2025 Cohort).
 
@@ -30,8 +30,7 @@ Ensure you have the following installed:
 1.  **Build the Docker image:**
 
     ```bash
-    # Replace 'zoomcamp-model:v1' with your actual image name
-    docker build -t zoomcamp-model:v1 .
+    docker build -t zoomcamp-model:3.13.10-hw10 .
     ```
 
 2.  **Create a Kind cluster (if not already running):**
@@ -43,7 +42,7 @@ Ensure you have the following installed:
 3.  **Load the image into Kind:**
 
     ```bash
-    kind load docker-image zoomcamp-model:v1
+    kind load docker-image zoomcamp-model:3.13.10-hw10
     ```
 
 4.  **Apply the Kubernetes manifests:**
@@ -57,7 +56,7 @@ Ensure you have the following installed:
     To access the service from your local machine (adjust ports as necessary):
 
     ```bash
-    kubectl port-forward service/model-service 9696:9696
+    kubectl port-forward service/subscription 9696:80
     ```
 
 6.  **Test the prediction:**
