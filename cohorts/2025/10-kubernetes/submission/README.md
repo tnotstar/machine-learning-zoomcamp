@@ -67,10 +67,10 @@ Ensure you have the following installed:
 
 ## Homework Answers
 
-- **Question 1:**: 0.49999999999842815
-- **Question 2:**: kind version 0.30.0
-- **Question 3:**: Pod
-- **Question 4:**: ClusterIP
-- **Question 5:**: kind load docker-image
-- **Question 6:**: 9696
-- **Question 7:**: subscription
+- **Question 1:** 0.49999999999842815
+- **Question 2:** kind version 0.30.0
+- **Question 3:** Pod
+- **Question 4:** ClusterIP
+- **Question 5:** kind load docker-image
+- **Question 6:** 9696
+- **Question 7:** subscription
